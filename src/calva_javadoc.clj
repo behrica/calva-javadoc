@@ -1,7 +1,8 @@
 (ns calva-javadoc 
   (:require
    [clojure.string :as str]
-   [clojure.java.doc.api]))
+   [clojure.java.doc.api]
+   [clojure.repl.deps]))
 
 (defn to-class-instance-form [form]
        ;;; their are probaly more cases
@@ -58,3 +59,10 @@
                                  :key "javadoc"
                                  :title "javadoc"})))
    
+(comment 
+  (clojure.java.doc.api/javadoc-data-fn  
+   "sun.util.calendar.ZoneInfo/.setRawOffset" nil)
+  ;;=> Execution error (FileNotFoundException) at sun.net.www.protocol.http.HttpURLConnection/getInputStream0 (HttpURLConnection.java:2024).
+  ;;   https://docs.oracle.com/en/java/javase/21/docs/api/java.base/sun/util/calendar/ZoneInfo.html
+  ;;   
+  )
