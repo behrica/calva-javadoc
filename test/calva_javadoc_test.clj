@@ -17,3 +17,9 @@
     (is (= 'flare/html (:tag flare)))))
 
 
+(comment
+  (def uuid (java.util.UUID/randomUUID))
+  uuid
+ (.toString uuid)
+  
+  )

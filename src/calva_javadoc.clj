@@ -39,7 +39,8 @@
 
     (tagged-literal 'flare/html {:html javadoc-html
                                  :key "javadoc"
-                                 :title "javadoc"})))
+                                 :title "javadoc"
+                                 :sidebar-panel? true})))
 
 
 (comment 
