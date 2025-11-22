@@ -15,9 +15,9 @@
             (if (.startsWith (str f)  ".")
               (str  (.getName (class (eval (second form)))) "/" f)
               (let [splits (str/split (str f) (re-pattern "/"))
-                    _ (println :splits splits)
+                    ;_ (println :splits splits)
                     evaled (eval (symbol (first splits)))
-                    _ (println :evaled evaled)
+                    ;_ (println :evaled evaled)
                     class-name (.getName evaled)]
                 (format "%s/%s" class-name (second splits)))))))
 

@@ -29,6 +29,7 @@ Notes & troubleshooting
 - The target class must be available on the REPL classpath.
 - Not all libraries publish javadoc jars; lookups may fail for those.
 - Network access and Maven-central (or other repositories) availability can affect results.
+- [!CAUTION] The running the above snippet, will `eval` the second element of the form. 
 
 Contributing
 - PRs and issues welcome. Keep changes small and focused.
