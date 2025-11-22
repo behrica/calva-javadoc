@@ -15,7 +15,7 @@ Quick install (example Calva custom snippet)
  (do
    (clojure.repl.deps/add-lib 'calva-javadoc/calva-javadoc
                               {:git/url "git@github.com:behrica/calva-javadoc.git"
-                               :git/sha "9f02f09699d0d83185c6c83edcb539d88d27a3d6"})
+                               :git/sha "2a745a1fe380d6aa38d9120bf3c7c2e7774fb0bb"})
    (require '[calva-javadoc])
    (calva-javadoc/view-javadoc-in-flare '$current-form))}
 ```
@@ -29,7 +29,9 @@ Notes & troubleshooting
 - The target class must be available on the REPL classpath.
 - Not all libraries publish javadoc jars; lookups may fail for those.
 - Network access and Maven-central (or other repositories) availability can affect results.
-- [!CAUTION] The running the above snippet, will `eval` the second element of the form. 
+
+> [!WARNING] 
+> The running the above snippet, will `eval` the second element of the form. 
 
 Contributing
 - PRs and issues welcome. Keep changes small and focused.
